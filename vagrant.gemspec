@@ -33,6 +33,8 @@ Gem::Specification.new do |s|
 
   # We lock this down to avoid compilation issues.
   s.add_dependency "nokogiri", "= 1.6.7.1"
+  s.add_dependency "mime-types", "~> 2.99"
+  s.add_dependency "logging", "~> 2.0"
 
   # NOTE: The ruby_dep gem is an implicit dependency from the listen gem. Later versions
   # of the ruby_dep gem impose an aggressive constraint on the required ruby version (>= 2.2.5).
