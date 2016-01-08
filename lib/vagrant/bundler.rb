@@ -641,10 +641,10 @@ module Vagrant
     def vagrant_internal_specs
       # activate any dependencies up front so we can always
       # pin them when resolving
-      self_spec = Gem::Specification.find { |s| s.name == "vagrant" && s.activated? }
+      self_spec = Gem::Specification.find { |s| s.name == "vagrant-unbundled" && s.activated? }
       if !self_spec
         @logger.warn("Failed to locate activated vagrant specification. Activating...")
-        self_spec = Gem::Specification.find { |s| s.name == "vagrant" }
+        self_spec = Gem::Specification.find { |s| s.name == "vagrant-unbundled" }
         if !self_spec
           @logger.error("Failed to locate Vagrant RubyGem specification")
           raise Vagrant::Errors::SourceSpecNotFound
