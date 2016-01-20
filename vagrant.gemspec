@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
   s.add_dependency "winrm-fs", "~> 0.3.0"
 
   # We lock this down to avoid compilation issues.
-  s.add_dependency "nokogiri", "= 1.6.7.1"
+  s.add_dependency "nokogiri", "~> 1.6.8"
   s.add_dependency "mime-types", "~> 2.99"
   s.add_dependency "logging", "~> 2.0"
 
